@@ -1,0 +1,19 @@
+version: 0.2 
+phases: 
+  pre_build:  
+    commands: 
+      - 'export LC_ALL="en_US.utf8"' 
+  install: 
+    commands: 
+      - 'npm install npm -g' 
+      - 'npm i --no-package-lock --global-style' 
+      - 'npx lerna bootstrap --reject-cycles' 
+  build: 
+    commands: 
+      - 'npx lerna run --stream build || fail'
+      - 'npx lerna run --stream lint || fail' 
+      # - 'npx jest' 
+      - 'npx lerna run --stream package || fail' 
+artifacts:  
+  files: [ '**/*' ] 
+  base-directory: 'dist' 

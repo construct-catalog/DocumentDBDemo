@@ -1,0 +1,74 @@
+{
+  "name": "@richardhboyd/doc_db_lib",
+  "version": "0.1.0-alpha.6",
+  "description": "DocumentDB API Example",
+  "keywords": [
+    "cdk",
+    "constructs",
+    "documentdb",
+    "lambda",
+    "apigateway",
+    "jsii"
+  ],
+  "author": {
+    "name": "Richard Boyd",
+    "email": "Richard@rboyd.dev",
+    "url": "https://www.rboyd.dev"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CDK-User-Group/DocumentDBDemo",
+    "directory": "lib/"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "jsii",
+    "watch": "jsii -w",
+    "package": "jsii-pacmak -v",
+    "test": "jest",
+    "lint": "tslint 'lib/**/*.ts{,x}'"
+  },
+  "jsii": {
+    "outdir": "../../dist/",
+    "targets": {
+      "java": {
+        "package": "dev.rboyd.cdkconstructs.docdbdemo",
+        "maven": {
+          "groupId": "dev.rboyd.cdkconstructs",
+          "artifactId": "docdbdemo"
+        }
+      },
+      "python": {
+        "distName": "docdbdemo",
+        "module": "docdbdemo"
+      }
+    }
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.8.0",
+    "@types/jest": "^24.0.18",
+    "jsii": "^0.16.0",
+    "jsii-pacmak": "^0.16.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "~3.6.2"
+  },
+  "peerDependencies": {
+    "@aws-cdk/core": "^1.8.0",
+    "@aws-cdk/aws-ec2": "^1.8.0",
+    "@aws-cdk/aws-docdb": "^1.8.0",
+    "@aws-cdk/aws-apigateway": "^1.8.0",
+    "@aws-cdk/aws-lambda": "^1.8.0",
+    "@aws-cdk/aws-secretsmanager": "^1.8.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "^1.8.0",
+    "@aws-cdk/aws-docdb": "^1.8.0",
+    "@aws-cdk/aws-apigateway": "^1.8.0",
+    "@aws-cdk/aws-lambda": "^1.8.0",
+    "@aws-cdk/aws-secretsmanager": "^1.8.0",
+    "@aws-cdk/core": "^1.8.0"
+  }
+}
