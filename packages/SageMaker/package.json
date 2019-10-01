@@ -1,0 +1,77 @@
+{
+  "name": "@richardhboyd/sagemaker_lambda",
+  "version": "0.1.0-alpha.1",
+  "description": "SageMaker Training with Lambda-based inference",
+  "keywords": [
+    "cdk",
+    "constructs",
+    "sagemaker",
+    "lambda",
+    "apigateway",
+    "jsii"
+  ],
+  "author": {
+    "name": "Richard Boyd",
+    "email": "Richard@rboyd.dev",
+    "url": "https://www.rboyd.dev"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CDK-User-Group/DocumentDBDemo",
+    "directory": "lib/"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "jsii",
+    "watch": "jsii -w",
+    "package": "jsii-pacmak -v",
+    "test": "jest",
+    "lint": "tslint 'lib/**/*.ts{,x}'"
+  },
+  "jsii": {
+    "outdir": "../../dist/",
+    "targets": {
+      "java": {
+        "package": "dev.rboyd.cdkconstructs.sagemaker_lambda",
+        "maven": {
+          "groupId": "dev.rboyd.cdkconstructs",
+          "artifactId": "sagemaker_lambda"
+        }
+      },
+      "python": {
+        "distName": "sagemaker_lambda",
+        "module": "sagemaker_lambda"
+      }
+    }
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.8.0",
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "~3.6.2"
+  },
+  "peerDependencies": {
+    "@aws-cdk/core": "^1.8.0",
+    "@aws-cdk/aws-sns": "^1.8.0",
+    "@aws-cdk/aws-sns-subscriptions": "^1.8.0",
+    "@aws-cdk/aws-sqs": "^1.8.0",
+    "@aws-cdk/aws-lambda": "^1.8.0",
+    "@aws-cdk/aws-s3": "^1.8.0",
+    "@aws-cdk/aws-codepipeline": "^1.8.0",
+    "@aws-cdk/aws-codebuild": "^1.8.0",
+    "@aws-cdk/aws-codepipeline-actions": "^1.8.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.8.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-lambda": "^1.8.0",
+    "@aws-cdk/aws-s3": "^1.8.0",
+    "@aws-cdk/aws-codepipeline": "^1.8.0",
+    "@aws-cdk/aws-codebuild": "^1.8.0",
+    "@aws-cdk/aws-codepipeline-actions": "^1.8.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.8.0",
+    "@aws-cdk/core": "^1.8.0"
+  }
+}

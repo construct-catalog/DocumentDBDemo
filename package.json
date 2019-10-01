@@ -19,6 +19,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@richardhboyd/doc_db_lib": "file:packages/DocumentDBDemo"
+    "@richardhboyd/doc_db_lib": "file:packages/DocumentDBDemo",
+    "@richardhboyd/sagemaker_lambda": "file:packages/SageMaker"
   }
 }

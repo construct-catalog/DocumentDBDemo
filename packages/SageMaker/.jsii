@@ -8,83 +8,83 @@
     "url": "https://www.rboyd.dev"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": {
+    "@aws-cdk/aws-codebuild": {
       "targets": {
         "dotnet": {
           "assemblyOriginatorKeyFile": "../../key.snk",
-          "namespace": "Amazon.CDK.AWS.APIGateway",
-          "packageId": "Amazon.CDK.AWS.APIGateway",
+          "namespace": "Amazon.CDK.AWS.CodeBuild",
+          "packageId": "Amazon.CDK.AWS.CodeBuild",
           "signAssembly": true,
           "versionSuffix": "-devpreview"
         },
         "java": {
           "maven": {
-            "artifactId": "apigateway",
+            "artifactId": "codebuild",
             "groupId": "software.amazon.awscdk",
             "versionSuffix": ".DEVPREVIEW"
           },
-          "package": "software.amazon.awscdk.services.apigateway"
+          "package": "software.amazon.awscdk.services.codebuild"
         },
         "js": {
-          "npm": "@aws-cdk/aws-apigateway"
+          "npm": "@aws-cdk/aws-codebuild"
         },
         "python": {
-          "distName": "aws-cdk.aws-apigateway",
-          "module": "aws_cdk.aws_apigateway"
+          "distName": "aws-cdk.aws-codebuild",
+          "module": "aws_cdk.aws_codebuild"
         }
       },
       "version": "1.8.0"
     },
-    "@aws-cdk/aws-docdb": {
+    "@aws-cdk/aws-codepipeline": {
       "targets": {
         "dotnet": {
           "assemblyOriginatorKeyFile": "../../key.snk",
-          "namespace": "Amazon.CDK.AWS.DocDB",
-          "packageId": "Amazon.CDK.AWS.DocDB",
+          "namespace": "Amazon.CDK.AWS.CodePipeline",
+          "packageId": "Amazon.CDK.AWS.CodePipeline",
           "signAssembly": true,
           "versionSuffix": "-devpreview"
         },
         "java": {
           "maven": {
-            "artifactId": "docdb",
+            "artifactId": "codepipeline",
             "groupId": "software.amazon.awscdk",
             "versionSuffix": ".DEVPREVIEW"
           },
-          "package": "software.amazon.awscdk.services.docdb"
+          "package": "software.amazon.awscdk.services.codepipeline"
         },
         "js": {
-          "npm": "@aws-cdk/aws-docdb"
+          "npm": "@aws-cdk/aws-codepipeline"
         },
         "python": {
-          "distName": "aws-cdk.aws-docdb",
-          "module": "aws_cdk.aws_docdb"
+          "distName": "aws-cdk.aws-codepipeline",
+          "module": "aws_cdk.aws_codepipeline"
         }
       },
       "version": "1.8.0"
     },
-    "@aws-cdk/aws-ec2": {
+    "@aws-cdk/aws-codepipeline-actions": {
       "targets": {
         "dotnet": {
           "assemblyOriginatorKeyFile": "../../key.snk",
-          "namespace": "Amazon.CDK.AWS.EC2",
-          "packageId": "Amazon.CDK.AWS.EC2",
+          "namespace": "Amazon.CDK.AWS.Codepipeline.Actions",
+          "packageId": "Amazon.CDK.AWS.Codepipeline.Actions",
           "signAssembly": true,
           "versionSuffix": "-devpreview"
         },
         "java": {
           "maven": {
-            "artifactId": "ec2",
+            "artifactId": "codepipeline-actions",
             "groupId": "software.amazon.awscdk",
             "versionSuffix": ".DEVPREVIEW"
           },
-          "package": "software.amazon.awscdk.services.ec2"
+          "package": "software.amazon.awscdk.services.codepipeline.actions"
         },
         "js": {
-          "npm": "@aws-cdk/aws-ec2"
+          "npm": "@aws-cdk/aws-codepipeline-actions"
         },
         "python": {
-          "distName": "aws-cdk.aws-ec2",
-          "module": "aws_cdk.aws_ec2"
+          "distName": "aws-cdk.aws-codepipeline-actions",
+          "module": "aws_cdk.aws_codepipeline_actions"
         }
       },
       "version": "1.8.0"
@@ -116,29 +116,56 @@
       },
       "version": "1.8.0"
     },
-    "@aws-cdk/aws-secretsmanager": {
+    "@aws-cdk/aws-lambda-event-sources": {
       "targets": {
         "dotnet": {
           "assemblyOriginatorKeyFile": "../../key.snk",
-          "namespace": "Amazon.CDK.AWS.SecretsManager",
-          "packageId": "Amazon.CDK.AWS.SecretsManager",
+          "namespace": "Amazon.CDK.AWS.Lambda.EventSources",
+          "packageId": "Amazon.CDK.AWS.Lambda.EventSources",
           "signAssembly": true,
           "versionSuffix": "-devpreview"
         },
         "java": {
           "maven": {
-            "artifactId": "secretsmanager",
+            "artifactId": "lambda-event-sources",
             "groupId": "software.amazon.awscdk",
             "versionSuffix": ".DEVPREVIEW"
           },
-          "package": "software.amazon.awscdk.services.secretsmanager"
+          "package": "software.amazon.awscdk.services.lambda.eventsources"
         },
         "js": {
-          "npm": "@aws-cdk/aws-secretsmanager"
+          "npm": "@aws-cdk/aws-lambda-event-sources"
         },
         "python": {
-          "distName": "aws-cdk.aws-secretsmanager",
-          "module": "aws_cdk.aws_secretsmanager"
+          "distName": "aws-cdk.aws-lambda-event-sources",
+          "module": "aws_cdk.aws_lambda_event_sources"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-s3": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.S3",
+          "packageId": "Amazon.CDK.AWS.S3",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "s3",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.s3"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-s3"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-s3",
+          "module": "aws_cdk.aws_s3"
         }
       },
       "version": "1.8.0"
@@ -172,6 +199,33 @@
     }
   },
   "dependencyClosure": {
+    "@aws-cdk/assets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.Assets",
+          "packageId": "Amazon.CDK.Assets",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-assets",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.assets"
+        },
+        "js": {
+          "npm": "@aws-cdk/assets"
+        },
+        "python": {
+          "distName": "aws-cdk.assets",
+          "module": "aws_cdk.assets"
+        }
+      },
+      "version": "1.8.0"
+    },
     "@aws-cdk/aws-apigateway": {
       "targets": {
         "dotnet": {
@@ -199,29 +253,29 @@
       },
       "version": "1.8.0"
     },
-    "@aws-cdk/aws-certificatemanager": {
+    "@aws-cdk/aws-cloudformation": {
       "targets": {
         "dotnet": {
           "assemblyOriginatorKeyFile": "../../key.snk",
-          "namespace": "Amazon.CDK.AWS.CertificateManager",
-          "packageId": "Amazon.CDK.AWS.CertificateManager",
+          "namespace": "Amazon.CDK.AWS.CloudFormation",
+          "packageId": "Amazon.CDK.AWS.CloudFormation",
           "signAssembly": true,
           "versionSuffix": "-devpreview"
         },
         "java": {
           "maven": {
-            "artifactId": "certificatemanager",
+            "artifactId": "cloudformation",
             "groupId": "software.amazon.awscdk",
             "versionSuffix": ".DEVPREVIEW"
           },
-          "package": "software.amazon.awscdk.services.certificatemanager"
+          "package": "software.amazon.awscdk.services.cloudformation"
         },
         "js": {
-          "npm": "@aws-cdk/aws-certificatemanager"
+          "npm": "@aws-cdk/aws-cloudformation"
         },
         "python": {
-          "distName": "aws-cdk.aws-certificatemanager",
-          "module": "aws_cdk.aws_certificatemanager"
+          "distName": "aws-cdk.aws-cloudformation",
+          "module": "aws_cdk.aws_cloudformation"
         }
       },
       "version": "1.8.0"
@@ -253,29 +307,164 @@
       },
       "version": "1.8.0"
     },
-    "@aws-cdk/aws-docdb": {
+    "@aws-cdk/aws-codebuild": {
       "targets": {
         "dotnet": {
           "assemblyOriginatorKeyFile": "../../key.snk",
-          "namespace": "Amazon.CDK.AWS.DocDB",
-          "packageId": "Amazon.CDK.AWS.DocDB",
+          "namespace": "Amazon.CDK.AWS.CodeBuild",
+          "packageId": "Amazon.CDK.AWS.CodeBuild",
           "signAssembly": true,
           "versionSuffix": "-devpreview"
         },
         "java": {
           "maven": {
-            "artifactId": "docdb",
+            "artifactId": "codebuild",
             "groupId": "software.amazon.awscdk",
             "versionSuffix": ".DEVPREVIEW"
           },
-          "package": "software.amazon.awscdk.services.docdb"
+          "package": "software.amazon.awscdk.services.codebuild"
         },
         "js": {
-          "npm": "@aws-cdk/aws-docdb"
+          "npm": "@aws-cdk/aws-codebuild"
         },
         "python": {
-          "distName": "aws-cdk.aws-docdb",
-          "module": "aws_cdk.aws_docdb"
+          "distName": "aws-cdk.aws-codebuild",
+          "module": "aws_cdk.aws_codebuild"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-codecommit": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.CodeCommit",
+          "packageId": "Amazon.CDK.AWS.CodeCommit",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "codecommit",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.codecommit"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-codecommit"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-codecommit",
+          "module": "aws_cdk.aws_codecommit"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-codedeploy": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.CodeDeploy",
+          "packageId": "Amazon.CDK.AWS.CodeDeploy",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "codedeploy",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.codedeploy"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-codedeploy"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-codedeploy",
+          "module": "aws_cdk.aws_codedeploy"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-codepipeline": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.CodePipeline",
+          "packageId": "Amazon.CDK.AWS.CodePipeline",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "codepipeline",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.codepipeline"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-codepipeline"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-codepipeline",
+          "module": "aws_cdk.aws_codepipeline"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-codepipeline-actions": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.Codepipeline.Actions",
+          "packageId": "Amazon.CDK.AWS.Codepipeline.Actions",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "codepipeline-actions",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.codepipeline.actions"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-codepipeline-actions"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-codepipeline-actions",
+          "module": "aws_cdk.aws_codepipeline_actions"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-dynamodb": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.DynamoDB",
+          "packageId": "Amazon.CDK.AWS.DynamoDB",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "dynamodb",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.dynamodb"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-dynamodb"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-dynamodb",
+          "module": "aws_cdk.aws_dynamodb"
         }
       },
       "version": "1.8.0"
@@ -307,29 +496,83 @@
       },
       "version": "1.8.0"
     },
-    "@aws-cdk/aws-elasticloadbalancingv2": {
+    "@aws-cdk/aws-ecr": {
       "targets": {
         "dotnet": {
           "assemblyOriginatorKeyFile": "../../key.snk",
-          "namespace": "Amazon.CDK.AWS.ElasticLoadBalancingV2",
-          "packageId": "Amazon.CDK.AWS.ElasticLoadBalancingV2",
+          "namespace": "Amazon.CDK.AWS.ECR",
+          "packageId": "Amazon.CDK.AWS.ECR",
           "signAssembly": true,
           "versionSuffix": "-devpreview"
         },
         "java": {
           "maven": {
-            "artifactId": "elasticloadbalancingv2",
+            "artifactId": "ecr",
             "groupId": "software.amazon.awscdk",
             "versionSuffix": ".DEVPREVIEW"
           },
-          "package": "software.amazon.awscdk.services.elasticloadbalancingv2"
+          "package": "software.amazon.awscdk.services.ecr"
         },
         "js": {
-          "npm": "@aws-cdk/aws-elasticloadbalancingv2"
+          "npm": "@aws-cdk/aws-ecr"
         },
         "python": {
-          "distName": "aws-cdk.aws-elasticloadbalancingv2",
-          "module": "aws_cdk.aws_elasticloadbalancingv2"
+          "distName": "aws-cdk.aws-ecr",
+          "module": "aws_cdk.aws_ecr"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-ecr-assets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.Ecr.Assets",
+          "packageId": "Amazon.CDK.ECR.Assets",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ecr-assets",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.ecr.assets"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ecr-assets"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-ecr-assets",
+          "module": "aws_cdk.aws_ecr_assets"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-ecs": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.ECS",
+          "packageId": "Amazon.CDK.AWS.ECS",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ecs",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.ecs"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ecs"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-ecs",
+          "module": "aws_cdk.aws_ecs"
         }
       },
       "version": "1.8.0"
@@ -361,6 +604,33 @@
       },
       "version": "1.8.0"
     },
+    "@aws-cdk/aws-events-targets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.Events.Targets",
+          "packageId": "Amazon.CDK.AWS.Events.Targets",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "events-targets",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.events.targets"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-events-targets"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-events-targets",
+          "module": "aws_cdk.aws_events_targets"
+        }
+      },
+      "version": "1.8.0"
+    },
     "@aws-cdk/aws-iam": {
       "targets": {
         "dotnet": {
@@ -384,6 +654,33 @@
         "python": {
           "distName": "aws-cdk.aws-iam",
           "module": "aws_cdk.aws_iam"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-kinesis": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.Kinesis",
+          "packageId": "Amazon.CDK.AWS.Kinesis",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "kinesis",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.kinesis"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-kinesis"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-kinesis",
+          "module": "aws_cdk.aws_kinesis"
         }
       },
       "version": "1.8.0"
@@ -438,6 +735,33 @@
         "python": {
           "distName": "aws-cdk.aws-lambda",
           "module": "aws_cdk.aws_lambda"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-lambda-event-sources": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.Lambda.EventSources",
+          "packageId": "Amazon.CDK.AWS.Lambda.EventSources",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "lambda-event-sources",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.lambda.eventsources"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-lambda-event-sources"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-lambda-event-sources",
+          "module": "aws_cdk.aws_lambda_event_sources"
         }
       },
       "version": "1.8.0"
@@ -523,6 +847,33 @@
       },
       "version": "1.8.0"
     },
+    "@aws-cdk/aws-s3-notifications": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.S3.Notifications",
+          "packageId": "Amazon.CDK.AWS.S3.Notifications",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "s3-notifications",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.s3.notifications"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-s3-notifications"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-s3-notifications",
+          "module": "aws_cdk.aws_s3_notifications"
+        }
+      },
+      "version": "1.8.0"
+    },
     "@aws-cdk/aws-secretsmanager": {
       "targets": {
         "dotnet": {
@@ -550,6 +901,60 @@
       },
       "version": "1.8.0"
     },
+    "@aws-cdk/aws-sns": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.SNS",
+          "packageId": "Amazon.CDK.AWS.SNS",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sns",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.sns"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sns"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-sns",
+          "module": "aws_cdk.aws_sns"
+        }
+      },
+      "version": "1.8.0"
+    },
+    "@aws-cdk/aws-sns-subscriptions": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "namespace": "Amazon.CDK.AWS.SNS.Subscriptions",
+          "packageId": "Amazon.CDK.AWS.SNS.Subscriptions",
+          "signAssembly": true,
+          "versionSuffix": "-devpreview"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sns-subscriptions",
+            "groupId": "software.amazon.awscdk",
+            "versionSuffix": ".DEVPREVIEW"
+          },
+          "package": "software.amazon.awscdk.services.sns.subscriptions"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sns-subscriptions"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-sns-subscriptions",
+          "module": "aws_cdk.aws_sns_subscriptions"
+        }
+      },
+      "version": "1.8.0"
+    },
     "@aws-cdk/aws-sqs": {
       "targets": {
         "dotnet": {
@@ -573,33 +978,6 @@
         "python": {
           "distName": "aws-cdk.aws-sqs",
           "module": "aws_cdk.aws_sqs"
-        }
-      },
-      "version": "1.8.0"
-    },
-    "@aws-cdk/aws-ssm": {
-      "targets": {
-        "dotnet": {
-          "assemblyOriginatorKeyFile": "../../key.snk",
-          "namespace": "Amazon.CDK.AWS.SSM",
-          "packageId": "Amazon.CDK.AWS.SSM",
-          "signAssembly": true,
-          "versionSuffix": "-devpreview"
-        },
-        "java": {
-          "maven": {
-            "artifactId": "ssm",
-            "groupId": "software.amazon.awscdk",
-            "versionSuffix": ".DEVPREVIEW"
-          },
-          "package": "software.amazon.awscdk.services.ssm"
-        },
-        "js": {
-          "npm": "@aws-cdk/aws-ssm"
-        },
-        "python": {
-          "distName": "aws-cdk.aws-ssm",
-          "module": "aws_cdk.aws_ssm"
         }
       },
       "version": "1.8.0"
@@ -659,13 +1037,13 @@
       "version": "1.8.0"
     }
   },
-  "description": "DocumentDB API Example",
+  "description": "SageMaker Training with Lambda-based inference",
   "homepage": "https://github.com/CDK-User-Group/DocumentDBDemo",
-  "jsiiVersion": "0.15.2 (build dfe9aaf)",
+  "jsiiVersion": "0.16.0 (build 98909b5)",
   "license": "Apache-2.0",
-  "name": "@richardhboyd/doc_db_lib",
+  "name": "@richardhboyd/sagemaker_lambda",
   "readme": {
-    "markdown": "# Amazon DocumentDB Demo Construct\n---\n\n### Installing\n#### Pypi (Python)\n`pip install docdbdemo`\n\n#### npm (JavaScript and TypeScript)\n`npm install @richardhboyd/doc_db_lib`\n\n---\n\n### Usage\n#### Python\n```python\nfrom aws_cdk import (\n    core\n)\nfrom docdbdemo import DocDbLib\n\n\nclass MyStack(core.Stack):\n\n    def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:\n        super().__init__(scope, id, **kwargs)\n\n        DocDbLib(self, \"MyDocDBClient\")\n```\n\n#### TypeScript\n```typescript\nimport cdk = require('@aws-cdk/core');\nimport docdbdemo = require('@richardhboyd/doc_db_lib');\n\nexport class DocDbClientTsStack extends cdk.Stack {\n  constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {\n    super(scope, id, props);\n\n    new docdbdemo.DocDbLib(this, \"MyDocDBClient\");\n  }\n}\n```\n---\n### Diagram\n![](https://raw.githubusercontent.com/CDK-User-Group/DocumentDBDemo/master/packages/DocumentDBDemo/diagram.png)\n\n---\n### Interacting\nDeploying the stack will create an Amazon DocumentDB Cluster with one instance in each availability zone created by the CDK's VPC Construct, a Lambda function that can put items into the database and fetch them out again, and an API to send requests to the Lambda Funciton.\n\nThe stack will output an APIGateway endpoint that will front the created DocumentDB.\n\n```bash\nOutputs:\nDocDbClientTsStack.MyDocDBClientMyDocDbApiMyDocDBApiEndpoint74609B36 = https://gv8ooq7zti.execute-api.us-east-1.amazonaws.com/prod/\n\n```\n\nLet's look at how we use this new API.\n\nPutting a document in the DocumentDB\n```bash\nAPI=https://gv8ooq7zti.execute-api.us-east-1.amazonaws.com/prod\ncurl -H \"Content-Type: application/json\" -d '{\"bestCoder\":\"@allenmichael\", \"worstCoder\":\"singledigit\"}' -X POST $API/document\n```\n\nGetting a document out of the database\n```bash\nAPI=https://gv8ooq7zti.execute-api.us-east-1.amazonaws.com/prod\ncurl -H \"Content-Type: application/json\" $API/document?bestCoder=@allenmichael\n```\n\nTesting this out we see\n```bash\n$ curl -H \"Content-Type: application/json\" -d '{\"bestCoder\":\"@allenmichael\", \"worstCoder\":\"@singledigit\"}' -X POST $API/document\n\n{\"id\": \"5d7bd032c7866a33171a1261\"}\n\n$ curl -H \"Content-Type: application/json\" $API/document?bestCoder=@allenmichael\n\n{'_id': ObjectId('5d7bcfe6c7866a33171a125f'), 'bestCoder': '@allenmichael', 'worstCoder': '@singledigit'}\n```\n"
+    "markdown": "# Useful commands\n\n * `npm run build`   compile typescript to js\n * `npm run test`    perform the jest unit tests\n * `npm run watch`   watch for changes and compile\n"
   },
   "repository": {
     "directory": "lib/",
@@ -676,24 +1054,24 @@
   "targets": {
     "java": {
       "maven": {
-        "artifactId": "docdbdemo",
+        "artifactId": "sagemaker_lambda",
         "groupId": "dev.rboyd.cdkconstructs"
       },
-      "package": "dev.rboyd.cdkconstructs.docdbdemo"
+      "package": "dev.rboyd.cdkconstructs.sagemaker_lambda"
     },
     "js": {
-      "npm": "@richardhboyd/doc_db_lib"
+      "npm": "@richardhboyd/sagemaker_lambda"
     },
     "python": {
-      "distName": "docdbdemo",
-      "module": "docdbdemo"
+      "distName": "sagemaker_lambda",
+      "module": "sagemaker_lambda"
     }
   },
   "types": {
-    "@richardhboyd/doc_db_lib.DocDbLib": {
-      "assembly": "@richardhboyd/doc_db_lib",
+    "@richardhboyd/sagemaker_lambda.SageMaker": {
+      "assembly": "@richardhboyd/sagemaker_lambda",
       "base": "@aws-cdk/core.Construct",
-      "fqn": "@richardhboyd/doc_db_lib.DocDbLib",
+      "fqn": "@richardhboyd/sagemaker_lambda.SageMaker",
       "initializer": {
         "parameters": [
           {
@@ -710,9 +1088,8 @@
           },
           {
             "name": "props",
-            "optional": true,
             "type": {
-              "fqn": "@richardhboyd/doc_db_lib.DocDbLibProps"
+              "fqn": "@richardhboyd/sagemaker_lambda.SageMakerProps"
             }
           }
         ]
@@ -720,57 +1097,69 @@
       "kind": "class",
       "locationInModule": {
         "filename": "lib/index.ts",
-        "line": 17
+        "line": 26
       },
-      "name": "DocDbLib",
-      "properties": [
-        {
-          "docs": {
-            "returns": "the ARN of the SQS queue"
-          },
-          "immutable": true,
-          "locationInModule": {
-            "filename": "lib/index.ts",
-            "line": 19
-          },
-          "name": "queueArn",
-          "type": {
-            "primitive": "string"
-          }
-        }
-      ]
+      "name": "SageMaker"
     },
-    "@richardhboyd/doc_db_lib.DocDbLibProps": {
-      "assembly": "@richardhboyd/doc_db_lib",
+    "@richardhboyd/sagemaker_lambda.SageMakerProps": {
+      "assembly": "@richardhboyd/sagemaker_lambda",
       "datatype": true,
-      "fqn": "@richardhboyd/doc_db_lib.DocDbLibProps",
+      "fqn": "@richardhboyd/sagemaker_lambda.SageMakerProps",
       "kind": "interface",
       "locationInModule": {
         "filename": "lib/index.ts",
-        "line": 8
+        "line": 6
       },
-      "name": "DocDbLibProps",
+      "name": "SageMakerProps",
       "properties": [
         {
           "abstract": true,
           "docs": {
-            "default": "Duration.seconds(300)",
+            "summary": "Name of the model file."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 17
+          },
+          "name": "fileModelName",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "summary": "The name of this project."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 23
+          },
+          "name": "projectName",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
             "summary": "The visibility timeout to be configured on the SQS Queue, in seconds."
           },
           "immutable": true,
           "locationInModule": {
             "filename": "lib/index.ts",
-            "line": 14
+            "line": 11
           },
-          "name": "vpc",
-          "optional": true,
+          "name": "sagemakerOutputBucket",
           "type": {
-            "fqn": "@aws-cdk/aws-ec2.Vpc"
+            "fqn": "@aws-cdk/aws-s3.Bucket"
           }
         }
       ]
     }
   },
-  "version": "0.1.0-alpha.6",
-  "fingerprint": "MdBr5pkbiLRw4mku7RQa/0LlB+844UbH28XAzonDGDc="
+  "version": "0.1.0-alpha.1",
+  "fingerprint": "dFjO4ej5dDn0FSZwEC/kltUDCLNZcdf4y4DGMLzvvuA="
 }
